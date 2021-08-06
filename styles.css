@@ -1,0 +1,153 @@
+.fondo {
+  padding: 20px 0;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -650px -650px, 250px 250px;
+  min-height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tarjeta {
+  position: relative;
+  z-index: 10;
+  width: 350px;
+  height: 400px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contenedor-encabezado {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contenedor-encabezado img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contenedor-foto {
+  position: relative;
+  bottom: 55px;
+}
+
+.contenedor-foto img {
+  border: 5px solid #fefefe;
+  border-radius: 100px;
+}
+
+.contenedor-informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 35px;
+}
+
+.contenedor-info-victor {
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+.nombre,
+.numeros {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.edad {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.pais,
+.status {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.linea {
+  width: 350px;
+  height: 1px;
+  background-color: hsla(0, 0%, 59%, 0.25);
+}
+
+.contenedor-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 350px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.numeros,
+.status {
+  margin: 5px 14px;
+}
+
+@media (max-width: 360px) {
+  .fondo {
+    background-position: -650px -650px, 150px 150px;
+  }
+
+  .tarjeta,
+  .contenedor-info-victor,
+  .linea,
+  .contenedor-status {
+    width: 90%;
+  }
+
+  .contenedor-status {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 820px) {
+  .fondo {
+    background-position: -400px -600px, 400px 200px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .fondo {
+    background-position: -200px -600px, 650px 200px;
+  }
+}
