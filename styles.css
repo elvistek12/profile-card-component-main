@@ -29,11 +29,7 @@
   text-align: center;
 }
 
-.contenedor-encabezado {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
+.contenedor-encabezado,
 .contenedor-encabezado img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -129,9 +125,12 @@
 
   .tarjeta,
   .contenedor-info-victor,
-  .linea,
   .contenedor-status {
     width: 90%;
+  }
+
+  .linea {
+    width: 100%;
   }
 
   .contenedor-status {
